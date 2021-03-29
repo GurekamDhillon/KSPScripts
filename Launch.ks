@@ -22,7 +22,7 @@ until runmode = 0 {
 		set engineCount to engines:length.
 		print engineCount.
 		if engineCount <= 4 {
-			lock steering to up + R(0,-5,180).
+			lock steering to up + R(0,-15,180).
 		}
 		if engineCount < 3{
 			set runmode to 3.
