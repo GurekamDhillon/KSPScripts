@@ -42,7 +42,9 @@ until runmode = 0 {
 		lock steering to up + R(0,-90,90).
 		set runmode to 4.
 	} else if runmode = 4 {
-		wait until APOAPSIS >= targetAp.
+		until APOAPSIS >= targetAp {
+		  print APOAPSIS.
+		}
 		lock throttle to 0.
 		wait until ALTITUDE >= APOAPSIS-100.
 		lock throttle to 1.
