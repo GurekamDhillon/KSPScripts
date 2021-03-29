@@ -1,6 +1,6 @@
 clearscreen.
-set targetAp to 80000.
-set targetPa to 80000.
+set targetAp to 100000.
+set targetPa to 100000.
 set runmode to 2.
 if ALT:RADAR < 50 {
 	set runmode to 1.
